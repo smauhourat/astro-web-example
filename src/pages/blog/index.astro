@@ -1,0 +1,18 @@
+---
+import GralLayout from "../../layouts/GralLayout.astro";
+const posts = await Astro.glob("./posts/*.md");
+console.log(posts);
+---
+
+<GralLayout title='Ejemplo Astro - Blog'>
+  <h1>Blog</h1>
+  <ul>
+    {
+      posts.map((post) => (
+        <li>
+          <a href={post.url}>{post.url}</a>
+        </li>
+      ))
+    }
+  </ul>
+</GralLayout>

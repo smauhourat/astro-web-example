@@ -1,9 +1,9 @@
 ---
 interface Props {
   title: string;
-  body: string;
+  body?: string;
 }
-const { title, body } = Astro.props;
+const { title, body = "default content" } = Astro.props;
 ---
 
 <div class='card'>
