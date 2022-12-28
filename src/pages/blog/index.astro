@@ -1,11 +1,19 @@
 ---
 import GralLayout from "../../layouts/GralLayout.astro";
+import bgImage from "../../images/navidad2.jpg";
+
 const posts = await Astro.glob("./posts/*.md");
 console.log(posts);
 ---
 
 <GralLayout title='Ejemplo Astro - Blog'>
   <h1>Blog</h1>
+  <img
+    width='60px'
+    src='https://images.pexels.com/photos/10515553/pexels-photo-10515553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+  />
+  <img width='60px' src='./navidad.jpg' />
+  <img width='60px' src={bgImage} />
   <ul>
     {
       posts.map((post) => (
