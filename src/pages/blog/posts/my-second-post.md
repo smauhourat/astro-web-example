@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/GralLayout.astro
-title: "Mi Primer Post"
+title: "Mi Segundo Post"
 ---
 
 # Segundo Post
