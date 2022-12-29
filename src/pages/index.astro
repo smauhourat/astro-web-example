@@ -1,5 +1,8 @@
 ---
 import GralLayout from "../layouts/GralLayout.astro";
+import Button from "../components/ButtonSubscribe";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 ---
 
 <!-- <html lang='en'>
@@ -14,4 +17,8 @@ import GralLayout from "../layouts/GralLayout.astro";
     <h1>Astrooo</h1>
   </body>
 </html> -->
-<GralLayout title='Ejemplo Astro - Home'><h1>Home Page</h1></GralLayout>
+<GralLayout title='Ejemplo Astro - Home'
+  ><h1>Home Page</h1>
+  <Button client:load />
+  <ToastContainer client:load />
+</GralLayout>
